@@ -1,0 +1,32 @@
+{
+  "name": "accountingapp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "build": "node node_modules/react-native/local-cli/cli.js run-android",
+    "prebuild": "node node_modules/react-native/local-cli/cli.js bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
+    "test": "jest"
+  },
+  "dependencies": {
+    "apisauce": "^0.15.2",
+    "react": "16.8.3",
+    "react-native": "^0.55.4",
+    "react-native-sqlite-storage": "^3.3.10",
+    "react-native-swiper": "^1.5.14",
+    "react-redux": "5.0.7",
+    "redux": "4.0.0",
+    "redux-thunk": "2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.3",
+    "@babel/runtime": "7.4.3",
+    "babel-jest": "24.7.1",
+    "jest": "24.7.1",
+    "metro-react-native-babel-preset": "0.53.1",
+    "react-test-renderer": "16.8.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
